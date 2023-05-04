@@ -45,7 +45,7 @@ const Notes = () => {
             mb="4"
           >
             <Flex justify="space-between" width="100%">
-              <Text fontSize="lg" fontWeight="bold">
+              <Text color="white" fontSize="lg" fontWeight="bold">
                 {note.title}
               </Text>
               <IconButton
@@ -56,7 +56,9 @@ const Notes = () => {
                 onClick={() => handleDelete(note.id)}
               />
             </Flex>
-            <Text fontSize="md">{note.content}</Text>
+            <Text color="white" fontSize="md">
+              {note.content}
+            </Text>
           </Flex>
         ))}
       </PerfectScrollbar>
