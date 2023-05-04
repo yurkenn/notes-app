@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import { Box } from '@chakra-ui/react';
+import React from 'react';
+import Notes from './components/Notes';
+import Header from './components/Header';
+import Search from './components/Search';
+import TextArea from './components/TextArea';
+import PerfectScrollbar from 'react-perfect-scrollbar';
+import 'react-perfect-scrollbar/dist/css/styles.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <PerfectScrollbar
+      style={{
+        backgroundColor: '#0b141d',
+        height: '100vh',
+        width: '100vw',
+      }}
+    >
+      <Box
+        m="auto"
+        mt="10"
+        p="4"
+        borderRadius="lg"
+        boxShadow="md"
+        width="100%"
+        maxWidth="500px"
+        overflow="hidden"
+      >
+        <Header />
+        <Search />
+        <TextArea />
+        <Notes />
+      </Box>
+    </PerfectScrollbar>
   );
-}
+};
 
 export default App;
