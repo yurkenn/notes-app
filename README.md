@@ -4,6 +4,10 @@ This is a simple notes app built with React and Redux. It uses the browser's loc
 
 ### Video Demo
 
+
+https://github.com/yurkenn/notes-app/assets/69719126/89e5b1ed-bff1-48f3-98f7-6c50ddef674f
+
+
 ### Installation
 
 Clone the repository and run `npm install` to install the dependencies.
